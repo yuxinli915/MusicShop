@@ -1,0 +1,17 @@
+﻿@model IEnumerable<MusicShop.Song>
+
+@{
+    ViewBag.Title = "Buy";
+}
+
+<h2>Buy</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.DropDownList("SongId")
+    </div>
+    <input type="submit" value="Buy" />
+}
+
+<h2>@ViewBag.msg</h2>

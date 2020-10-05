@@ -1,0 +1,10 @@
+﻿@model Song
+@{
+    ViewBag.Title = "TopSong";
+}
+
+<h2>Top Song:</h2>
+
+<p>
+    @Model.Name is the top song. It is purchased @Model.UserSongs.Count times.
+</p>

@@ -1,0 +1,17 @@
+﻿@model Song
+@{
+    ViewBag.Title = "NumOfPurchase";
+}
+
+<h2>Choose a song from below</h2>
+@using (Html.BeginForm())
+{
+    <div>@Html.DropDownList("SongId")</div>
+    <input type="submit" value="OK"/>
+}
+
+@if(Model != null)
+{
+    <h2>@Model.Name is purchased @Model.UserSongs.Count times.</h2>
+}
+
